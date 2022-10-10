@@ -1,0 +1,1215 @@
+{
+	"info": {
+		"_postman_id": "7d01f11a-2b1b-4863-b117-c1df2d013fc7",
+		"name": "RetableTask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17948868"
+	},
+	"item": [
+		{
+			"name": "GET All Columns",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}/v1/api/columns",
+					"host": [
+						"{{endpoint}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"columns"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Retable info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "ApiKey",
+						"value": "RTBLv1-GJUVOaUIaCpwYNRboMYPClrtS",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.retable.io/v1/public/project/Z6xv0Qq04wNcMs0c/retable",
+					"protocol": "https",
+					"host": [
+						"api",
+						"retable",
+						"io"
+					],
+					"path": [
+						"v1",
+						"public",
+						"project",
+						"Z6xv0Qq04wNcMs0c",
+						"retable"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Retable info",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "ApiKey",
+								"value": "RTBLv1-GJUVOaUIaCpwYNRboMYPClrtS",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.retable.io/v1/public/project/Z6xv0Qq04wNcMs0c/retable",
+							"protocol": "https",
+							"host": [
+								"api",
+								"retable",
+								"io"
+							],
+							"path": [
+								"v1",
+								"public",
+								"project",
+								"Z6xv0Qq04wNcMs0c",
+								"retable"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4d3-Qv+jqJh8Cccfna3rvS9KikZtQus\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 06 Oct 2022 13:40:25 GMT"
+						},
+						{
+							"key": "X-Cache",
+							"value": "Miss from cloudfront"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 b09c9bae34dd4cc8282943c21319f752.cloudfront.net (CloudFront)"
+						},
+						{
+							"key": "X-Amz-Cf-Pop",
+							"value": "SOF50-C1"
+						},
+						{
+							"key": "X-Amz-Cf-Id",
+							"value": "BnEv5Tz9ClI-409lLT5vfe_FP11IGQ0TkthRsoGSATEvo5diyHEHkw=="
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"retables\": [\n            {\n                \"id\": \"x4Inl0hlFvbfQ7rJ\",\n                \"title\": \"Product\",\n                \"description\": \"\",\n                \"columns\": [\n                    {\n                        \"column_id\": \"FBMEPAHJzuWmo8Va\",\n                        \"title\": \"id\",\n                        \"type\": \"autonumber\",\n                        \"created_at\": \"2022-10-05 12:59:35.990000\"\n                    },\n                    {\n                        \"column_id\": \"YhbjXNhhOdX01PqD\",\n                        \"title\": \"price\",\n                        \"type\": \"currency\",\n                        \"created_at\": \"2022-10-05 13:04:57.179000\"\n                    },\n                    {\n                        \"column_id\": \"joZg2Z3FcW2SvdZ8\",\n                        \"title\": \"description\",\n                        \"type\": \"text\",\n                        \"created_at\": \"2022-10-05 13:08:56.825000\"\n                    },\n                    {\n                        \"column_id\": \"Vy93x43cFaIdPc8P\",\n                        \"title\": \"image\",\n                        \"type\": \"image\",\n                        \"created_at\": \"2022-10-05 14:13:12.847000\"\n                    },\n                    {\n                        \"column_id\": \"6sWWnJMU4XPPysUq\",\n                        \"title\": \"updatedAt\",\n                        \"type\": \"updated_at\",\n                        \"created_at\": \"2022-10-05 13:04:24.117000\"\n                    },\n                    {\n                        \"column_id\": \"AvDRSJCgvRzIkXWu\",\n                        \"title\": \"createdAt\",\n                        \"type\": \"created_at\",\n                        \"created_at\": \"2022-10-05 13:03:45.280000\"\n                    },\n                    {\n                        \"column_id\": \"bhjuhUzlr8m80NTi\",\n                        \"title\": \"amount\",\n                        \"type\": \"number\",\n                        \"created_at\": \"2022-10-05 13:03:12.553000\"\n                    },\n                    {\n                        \"column_id\": \"lmaW3WA6JuEvIdTq\",\n                        \"title\": \"name\",\n                        \"type\": \"text\"\n                    }\n                ],\n                \"project_id\": \"Z6xv0Qq04wNcMs0c\",\n                \"workspace_id\": \"F311xJ7N27ihpVrB\",\n                \"created_by\": {\n                    \"id\": \"zs2UmR6SDZ1cjEjR\",\n                    \"name\": \"Samet Kemal\",\n                    \"surname\": \"Ozdemir\",\n                    \"email\": \"sam.kem.2000@gmail.com\"\n                },\n                \"deleted_by\": null,\n                \"created_at\": \"2022-10-05T12:57:35.899Z\",\n                \"updated_at\": \"2022-10-05T16:02:52.649Z\",\n                \"deleted_at\": null\n            }\n        ],\n        \"count\": 1\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":{{productname1}},\r\n    \"description\":{{productdesc1}},\r\n    \"price\":{{productprice1}},\r\n    \"amount\":{{productamount1}}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}/v1/api/product",
+					"host": [
+						"{{endpoint}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Product",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":{{productname1}},\r\n    \"description\":{{productdesc1}},\r\n    \"price\":{{productprice1}},\r\n    \"amount\":{{productamount1}}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/v1/api/product",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"v1",
+								"api",
+								"product"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "237"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ed-AvwfMEov+CtUJlZdy7SZG9oKXKY\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Oct 2022 20:24:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"SteelSeries Arctis 1 Wired Gaming Headset\",\n    \"description\": \"Optimal PS5 compatibility requires user to change settings on Sony PS5 – disable Sony 3D Audio and then increase default volume to 100% \",\n    \"price\": \"49.99\",\n    \"amount\": \"50\"\n}"
+				}
+			]
+		},
+		{
+			"name": "GET Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}/v1/api/product/:productid",
+					"host": [
+						"{{endpoint}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"product",
+						":productid"
+					],
+					"variable": [
+						{
+							"key": "productid",
+							"value": "10000"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET Product",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/v1/api/product/:productid?=17",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"v1",
+								"api",
+								"product",
+								":productid"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "17"
+								}
+							],
+							"variable": [
+								{
+									"key": "productid",
+									"value": "17"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "235"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"eb-XkfN+nT814vBONEY/pOoRsGs21I\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Oct 2022 14:14:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"SteelSeries Arctis 2 Wired Gaming Headset\",\n    \"amount\": 50,\n    \"description\": \"Optimal PS5 compatibility requires user to change settings on Sony PS5 – disable Sony 3D Audio and then increase default volume to 100% \",\n    \"price\": \"49.99\"\n}"
+				}
+			]
+		},
+		{
+			"name": "GET All Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{endpoint}}/v1/api/product",
+					"host": [
+						"{{endpoint}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET All Product",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/v1/api/product",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"v1",
+								"api",
+								"product"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2433"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"981-gk9eX1aYh7xPX5AmZTONxXzzFiE\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Oct 2022 14:05:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": \"G25 Keyword\",\n        \"amount\": 25,\n        \"description\": \"RGB\",\n        \"price\": \"150.00\"\n    },\n    {\n        \"name\": \"SteelSeries Arctis 2 Wired Gaming Headset\",\n        \"amount\": 50,\n        \"description\": \"Optimal PS5 compatibility requires user to change settings on Sony PS5 – disable Sony 3D Audio and then increase default volume to 100% \",\n        \"price\": \"49.99\"\n    },\n    {\n        \"name\": \"SteelSeries Arctis 1 Wired Gaming Headset\",\n        \"amount\": 50,\n        \"description\": \"Optimal PS5 compatibility requires user to change settings on Sony PS5 – disable Sony 3D Audio and then increase default volume to 100% \",\n        \"price\": \"49.99\"\n    },\n    {\n        \"name\": \"SteelSeries Arctis 1 Wired Gaming Headset\",\n        \"amount\": 50,\n        \"description\": \"Optimal PS5 compatibility requires user to change settings on Sony PS5 – disable Sony 3D Audio and then increase default volume to 100% \",\n        \"price\": \"49.99\"\n    },\n    {\n        \"name\": \"SteelSeries Arctis 1 Wired Gaming Headset\",\n        \"amount\": 50,\n        \"description\": \"Optimal PS5 compatibility requires user to change settings on Sony PS5 – disable Sony 3D Audio and then increase default volume to 100% \",\n        \"price\": \"49.99\"\n    },\n    {\n        \"name\": \"SteelSeries Arctis 1 Wired Gaming Headset\",\n        \"amount\": 50,\n        \"description\": \"Optimal PS5 compatibility requires user to change settings on Sony PS5 – disable Sony 3D Audio and then increase default volume to 100% \",\n        \"price\": \"49.99\"\n    },\n    {\n        \"name\": \"SteelSeries Arctis 1 Wired Gaming Headset\",\n        \"amount\": 50,\n        \"description\": \"Optimal PS5 compatibility requires user to change settings on Sony PS5 – disable Sony 3D Audio and then increase default volume to 100% \",\n        \"price\": \"49.99\"\n    },\n    {\n        \"name\": \"SteelSeries Arctis 1 Wired Gaming Headset\",\n        \"amount\": 50,\n        \"description\": \"Optimal PS5 compatibility requires user to change settings on Sony PS5 – disable Sony 3D Audio and then increase default volume to 100% \",\n        \"price\": \"49.99\"\n    },\n    {\n        \"name\": \"SteelSeries Arctis 1 Wired Gaming Headset\",\n        \"amount\": 50,\n        \"description\": \"Optimal PS5 compatibility requires user to change settings on Sony PS5 – disable Sony 3D Audio and then increase default volume to 100% \",\n        \"price\": \"49.99\"\n    },\n    {\n        \"name\": \"SteelSeries Arctis 1 Wired Gaming Headset\",\n        \"amount\": 50,\n        \"description\": \"Optimal PS5 compatibility requires user to change settings on Sony PS5 – disable Sony 3D Audio and then increase default volume to 100% \",\n        \"price\": \"49.99\"\n    },\n    {\n        \"name\": \"SteelSeries Arctis 1 Wired Gaming Headset\",\n        \"amount\": 50,\n        \"description\": \"Optimal PS5 compatibility requires user to change settings on Sony PS5 – disable Sony 3D Audio and then increase default volume to 100% \",\n        \"price\": \"49.99\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\":\" lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum\",\r\n    \"name\":\"heyyyy\",\r\n    \"price\":\"35.90\",\r\n    \"amount\":\"30\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}/v1/api/product/:productid",
+					"host": [
+						"{{endpoint}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"product",
+						":productid"
+					],
+					"variable": [
+						{
+							"key": "productid",
+							"value": "18"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Product",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"sssss\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/v1/api/product/:productid",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"v1",
+								"api",
+								"product",
+								":productid"
+							],
+							"variable": [
+								{
+									"key": "productid",
+									"value": "17"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "13"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d-MyriZk56AHRFgzfi5J9rIsaWWhs\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Oct 2022 19:58:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        17\n    ]\n}"
+				},
+				{
+					"name": "Update Product",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\":45\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/v1/api/product/:productid",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"v1",
+								"api",
+								"product",
+								":productid"
+							],
+							"variable": [
+								{
+									"key": "productid",
+									"value": "17"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "13"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d-MyriZk56AHRFgzfi5J9rIsaWWhs\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Oct 2022 19:59:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        17\n    ]\n}"
+				},
+				{
+					"name": "Update Product",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"price\":\"65.78\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/v1/api/product/:productid",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"v1",
+								"api",
+								"product",
+								":productid"
+							],
+							"variable": [
+								{
+									"key": "productid",
+									"value": "17"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "13"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d-MyriZk56AHRFgzfi5J9rIsaWWhs\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Oct 2022 20:00:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        17\n    ]\n}"
+				},
+				{
+					"name": "Update Product",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\":\" lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/v1/api/product/:productid",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"v1",
+								"api",
+								"product",
+								":productid"
+							],
+							"variable": [
+								{
+									"key": "productid",
+									"value": "17"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "13"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d-MyriZk56AHRFgzfi5J9rIsaWWhs\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Oct 2022 20:00:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        17\n    ]\n}"
+				},
+				{
+					"name": "Update Product",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\":\" lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum\",\r\n    \"name\":\"heyyyy\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/v1/api/product/:productid",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"v1",
+								"api",
+								"product",
+								":productid"
+							],
+							"variable": [
+								{
+									"key": "productid",
+									"value": "17"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "13"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d-MyriZk56AHRFgzfi5J9rIsaWWhs\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Oct 2022 20:01:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        17\n    ]\n}"
+				},
+				{
+					"name": "Update Product",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\":\" lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum\",\r\n    \"name\":\"heyyyy\",\r\n    \"price\":\"35.90\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/v1/api/product/:productid",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"v1",
+								"api",
+								"product",
+								":productid"
+							],
+							"variable": [
+								{
+									"key": "productid",
+									"value": "17"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "13"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d-MyriZk56AHRFgzfi5J9rIsaWWhs\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Oct 2022 20:01:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        17\n    ]\n}"
+				},
+				{
+					"name": "Update Product",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\":\" lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum\",\r\n    \"name\":\"heyyyy\",\r\n    \"price\":\"35.90\",\r\n    \"amount\":\"30\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/v1/api/product/:productid",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"v1",
+								"api",
+								"product",
+								":productid"
+							],
+							"variable": [
+								{
+									"key": "productid",
+									"value": "17"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "13"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d-MyriZk56AHRFgzfi5J9rIsaWWhs\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 07 Oct 2022 20:02:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        17\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productIds\":[20]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{endpoint}}/v1/api/product/delete",
+					"host": [
+						"{{endpoint}}"
+					],
+					"path": [
+						"v1",
+						"api",
+						"product",
+						"delete"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Product",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productIds\":[25]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/v1/api/product/delete",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"v1",
+								"api",
+								"product",
+								"delete"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 08 Oct 2022 08:42:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "OK"
+				},
+				{
+					"name": "Delete Product",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productIds\":[24,26]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/v1/api/product/delete",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"v1",
+								"api",
+								"product",
+								"delete"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2-nOO9QiTIwXgNtWtBJezz8kv3SLc\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 08 Oct 2022 08:43:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "OK"
+				},
+				{
+					"name": "Delete Product",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productIds\":[23]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/v1/api/product/delete",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"v1",
+								"api",
+								"product",
+								"delete"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "36"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"24-PN4k+sC3xIzPXpBn1Ga8e/z6/I4\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 08 Oct 2022 08:56:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Row Id does not exist in the Retable"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
